@@ -18,5 +18,3 @@ A few links:
 - LinkedIn: https://www.linkedin.com/in/harshsingh58
 
 If you'd like to reach out, you can email me at harshs050803@gmail.com.
-
-Replace `/static/ico/author.svg` with your own photo (recommended sizes: 240x240 or 400x400) — keep the path in `image` updated to point to your file.
