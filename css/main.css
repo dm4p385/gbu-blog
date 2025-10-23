@@ -324,6 +324,15 @@ img {
     display: block;
 }
 
+/* Ensure the about page avatar keeps the intended fixed size */
+.about-avatar img {
+    width: 180px !important;
+    height: 180px !important;
+    object-fit: cover;
+    border-radius: 8px;
+    display: block;
+}
+
 aside{
     border: 2px solid var(--fg4);
     padding: 5px;
