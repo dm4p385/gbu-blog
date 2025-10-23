@@ -132,7 +132,9 @@ ul.flat li {
     margin-left: 0;
 }
 
-.tags {
+.tag-cloud .tags,
+.post-tags .tags {
+    /* Scoped: only remove top border for tag lists (tag cloud / post tags). */
     border-top: 0px !important;
 }
 
