@@ -6,7 +6,7 @@ image = "images/harshs.jpg"
 +++
 
 <figure class="about-avatar" style="margin:0 0 1.5rem 0;">
-  <img src="images/harshs.jpg" alt="Harsh Singh" style="width:180px;height:180px;border-radius:8px;object-fit:cover;display:block;" />
+  {{< img src="images/harshs.jpg" alt="Harsh Singh" style="width:180px;height:180px;border-radius:8px;object-fit:cover;display:block;" >}}
 </figure>
 
 Hi, I’m Harsh Singh — an Electrical Engineering graduate from BITS Pilani, currently a Software Engineer at Vegapay.
