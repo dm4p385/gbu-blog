@@ -1,6 +1,6 @@
 baseURL = "http://localhost:1313"  # ← Change this later to your actual domain (or use http://localhost:1313 while testing)
 languageCode = "en-us"
-title = "The good, the bad and the [undefined]"
+title = "The good, the bad, and the [undefined]"
 theme = "Hugo-Gruvbox-Theme"
 
 # Copyright footer (optional)

@@ -13,13 +13,10 @@ During college, I was part of a club responsible for building the apps and websi
 
 So we turned everything into a digital flow:
 
-✅ Event registration → scan your fest app QR
-
-✅ Food stalls → order digitally, pick up using OTP
-
-✅ Concert entry → scan & go
-
-✅ Payments, tracking, validation → all digitized and handled by software
+- Event registration → scan your fest app QR
+- Food stalls → order digitally, pick up using OTP
+- Concert entry → scan & go
+- Payments, tracking, validation → all digitized and handled by software
 
 If there existed a logistical bottleneck, we tried to solve it with software.
 
@@ -99,7 +96,7 @@ Then `hash(timestamp * key) → last 4 digits = OTP`.
 
 After 30 seconds, a new OTP appears, but still matches on server side.
 
-✨ *No network calls. No refresh requests. No bandwidth load.*
+*No network calls. No refresh requests. No bandwidth load.*
 
 ---
 
