@@ -115,11 +115,11 @@ Both client and server used this shared secret to generate a time-bound QR code.
 Even if internet was slow or unavailable, the QR always appeared in time.
 <div style="display:flex;gap:1rem;flex-wrap:wrap;margin:1rem 0;">
 	<figure style="flex:1 1 48%;margin:0;">
-		<img src="/images/p1_old_flow.png" alt="The Old Flow" style="width:100%;height:auto;border-radius:8px;object-fit:cover;" />
+		<img src="images/p1_old_flow.png" alt="The Old Flow" style="width:100%;height:auto;border-radius:8px;object-fit:cover;" />
 		<figcaption style="font-size:0.9rem;color:var(--muted,#666);margin-top:0.4rem;">Old flow: server-heavy QR refresh</figcaption>
 	</figure>
 	<figure style="flex:1 1 48%;margin:0;">
-		<img src="/images/p1_new_flow.png" alt="The New Flow" style="width:100%;height:auto;border-radius:8px;object-fit:cover;" />
+		<img src="images/p1_new_flow.png" alt="The New Flow" style="width:100%;height:auto;border-radius:8px;object-fit:cover;" />
 		<figcaption style="font-size:0.9rem;color:var(--muted,#666);margin-top:0.4rem;">New flow: time-synced QR generated locally</figcaption>
 	</figure>
 </div>

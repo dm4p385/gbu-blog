@@ -30,6 +30,22 @@ enableEmoji = true
   github = "https://github.com/dm4p385"
   twitter = "https://x.com/harsh_singh58"
 
+  # Social links used by the theme's header partial (feather icons)
+[[params.social]]
+  name = "GitHub"
+  url = "https://github.com/dm4p385"
+  icon = "github"
+
+[[params.social]]
+  name = "X"
+  url = "https://x.com/harsh_singh58"
+  icon = "twitter"
+
+[[params.social]]
+  name = "LinkedIn"
+  url = "https://www.linkedin.com/in/harshsingh58"
+  icon = "linkedin"
+
 # Navigation Menu
 [[menu.main]]
   name = "Home"
