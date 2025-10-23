@@ -1,0 +1,65 @@
+baseURL = "http://localhost:1313"  # ← Change this later to your actual domain (or use http://localhost:1313 while testing)
+languageCode = "en-us"
+title = "The good, the bad and the [undefined]"
+theme = "Hugo-Gruvbox-Theme"
+
+# Copyright footer (optional)
+copyright = "© 2025 Harsh Singh"
+
+# Enable or disable RSS, robots.txt, etc.
+enableRobotsTXT = true
+
+# Enable emoji support in markdown
+enableEmoji = true
+
+# Author info (used in meta tags and pages if referenced)
+[params.author]
+  name = "Harsh Singh"
+  email = "harshs050803@gmail.com"
+
+[params]
+  description = "A blog about tech, engineering and all things in between."
+  # Optional: Google Analytics ID (only if you want tracking)
+  googleAnalytics = "UA-XXXXXXXXX-X"
+  enableRelatedPosts = true
+  relatedPostsNumber = 2
+
+  # Optional: Social icons appear if you enable them
+  showSocial = true
+  linkedin = "https://www.linkedin.com/in/harshsingh58"
+  github = "https://github.com/dm4p385"
+  twitter = "https://x.com/harsh_singh58"
+
+# Navigation Menu
+[[menu.main]]
+  name = "Home"
+  url = "/"
+  weight = 1
+
+[[menu.main]]
+  name = "Posts"
+  url = "/posts"
+  weight = 2
+
+[[menu.main]]
+  name = "Tags"
+  url = "/tags"
+  weight = 3
+
+[[menu.main]]
+  name = "About"
+  url = "/about"
+  weight = 4
+
+# Enable tags taxonomy
+[taxonomies]
+  tag = "tags"
+
+# Markdown rendering and syntax highlighting
+[markup]
+  [markup.goldmark.renderer]
+    unsafe = true  # Allows raw HTML in Markdown
+  [markup.highlight]
+    codeFences = true
+    guessSyntax = true
+    lineNos = true
