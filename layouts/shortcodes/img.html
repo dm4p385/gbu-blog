@@ -1,0 +1,2 @@
+{{ $src := .Get "src" | absURL }}
+<img src="{{ $src }}" alt="{{ .Get "alt" | default "" }}"{{ with .Get "class" }} class="{{ . }}"{{ end }}{{ with .Get "style" }} style="{{ . }}"{{ end }} />
