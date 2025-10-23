@@ -1,0 +1,83 @@
+<head>
+
+    <meta charset="utf-8" />  
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="icon" type="image/svg" href="{{ .Site.BaseURL }}ico/favicon.svg">
+
+    {{- $title := ( .Title ) -}}
+	{{- $siteTitle := ( .Site.Title ) -}}
+	{{- if .IsHome -}}
+	<title>{{ $siteTitle }} {{ if isset .Site.Params "subtitle" }}- {{ .Site.Params.Subtitle }}{{ end }} </title>
+	{{- else -}}
+	<title>{{ $title }} - {{ $siteTitle }}</title>
+	{{- end -}}
+    
+	<meta name="description" content="{{ if .Params.Description }}{{ .Params.Description }}{{ else if .Site.Params.Description }}{{ .Site.Params.Description }}{{ else }}Blog{{ end }}" />
+	<meta name="keywords" content="{{ with .Params.tags }}{{ delimit . ", "}}{{ end }}, {{ with .Params.keywords }}{{ delimit . ", "}}{{ end }}" />
+
+
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" media="screen" href="{{ .Site.BaseURL }}css/main.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="{{ .Site.BaseURL }}css/syntax.css" />
+
+	<script src="https://unpkg.com/feather-icons"></script>
+
+	{{ range .AlternativeOutputFormats -}}
+    	{{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
+	{{ end -}}
+
+	{{ template "_internal/twitter_cards.html" . }}
+	{{ template "_internal/opengraph.html" . }}
+
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	{{- if .Site.Params.GoogleAnalytics -}}
+		{{ $ga := .Site.Params.GoogleAnalytics }}
+		<script>
+    // Define dataLayer and the gtag function.
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    // Default ad_storage to 'denied' as a placeholder
+    // Determine actual values based on your own requirements
+    gtag("consent", "default", {
+      ad_storage: "denied",
+      analytics_storage: "denied",
+    });
+  </script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  {{ $ga := .Site.Params.GoogleAnalytics }}
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+    gtag("config", "{{ $ga }}");
+  </script>
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id={{ $ga }}"
+  ></script>
+
+  <script>
+    var nameEQ = name + "=";
+    var ca = document.cookie.split(";");
+    for (var i = 0; i < ca.length; i++) {
+      var c = ca[i];
+	if (c.includes(nameEQ)){
+		gtag("consent", "update", {
+          ad_storage: "denied",
+          analytics_storage: "granted",
+        });
+	}
+    }
+  </script>         
+    {{- end -}}
+
+</head>
