@@ -9,7 +9,7 @@ summary = "By converting QR codes into time-synced tokens (like Google Auth), we
 
 ## **Background**
 
-During college, I was part of a club responsible for building the apps and websites used during BITS Pilani’s cultural and tech fests. These fests are massive multi-day events packed with competitions,´ concerts, food stalls, thousands of participants, and a chaotic influx of people entering and exiting the campus. Managing the end-to-end participant lifecycle without tech would have been a logistical nightmare.
+During college, I was part of a club responsible for building the apps and websites used during BITS Pilani’s cultural and tech fests. These fests are massive multi-day events packed with competitions, concerts, food stalls, thousands of participants, and a chaotic influx of people entering and exiting the campus. Managing the end-to-end participant lifecycle without tech would have been a logistical nightmare.
 
 So we turned everything into a digital flow:
 
@@ -150,8 +150,8 @@ Sometimes, solving a scaling issue isn’t about adding more servers or throwing
 In the end we were able to
 
 - Minimize network usage by reducing the throughput.
-- Preserved security by still retaining the expiry feature.
-- Implemented all of this within just 3 days of the app launch!
+- Preserve security by still retaining the expiry feature.
+- Implement all of this within just 3 days of the app launch!
 - Handle ticketing worth 7.6 million INR without a hitch
 - But most importantly… won user trust ♥️
 
