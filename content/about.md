@@ -15,6 +15,7 @@ I’m passionate about problem-solving and building things that work. The Good, 
 
 A few links:
 
+- My resume: [resume.pdf](https://github.com/dm4p385/resume/blob/master/resume.pdf)
 - GitHub: https://github.com/dm4p385
 - X (Twitter): https://x.com/harsh_singh58
 - LinkedIn: https://www.linkedin.com/in/harshsingh58
