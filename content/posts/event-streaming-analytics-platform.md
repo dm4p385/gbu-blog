@@ -2,7 +2,7 @@
 date = '2026-02-17T23:20:41+05:30'
 draft = false
 title = 'Event Streaming Analytics Platform'
-tags = ["clicksteam", "event-orchestration", "realtime-analytics", "FastAPI", "kafka", "engineering"]
+tags = ["clicksteam", "event-orchestration", "realtime-analytics", "PostgreSQL", "Redis", "FastAPI", "kafka", "engineering"]
 categories = ["blog"]
 summary = "Designing a User event streaming platform with horizontal scaling for customer engagement, real-time analytics and monitoring"
 +++
