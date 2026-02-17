@@ -1,6 +1,6 @@
 +++
 date = '2026-02-17T23:20:41+05:30'
-draft = true
+draft = false
 title = 'Event Streaming Analytics Platform'
 tags = ["clicksteam", "event-orchestration", "realtime-analytics", "FastAPI", "kafka", "engineering"]
 categories = ["blog"]
