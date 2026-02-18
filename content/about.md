@@ -11,7 +11,9 @@ image = "images/harshs.jpg"
 
 Hi, I’m Harsh Singh — an Electrical Engineering graduate from BITS Pilani, currently a Software Engineer at Vegapay.
 
-I’m passionate about problem-solving and building things that work. The Good, The Bad and The Undefined (TGBU) is my space to share the technical challenges I’ve faced, the projects I’ve built, and the solutions I’ve discovered along the way — from small hacks to full-fledged projects — all drawn from my engineering and software journey.
+I’m passionate about problem-solving and building things that work. The Good, The Bad and The Undefined (TGBU) is my space to share the technical challenges I’ve faced, the projects I’ve built, and the solutions I’ve discovered along the way — from small hacks to full-fledged systems — all drawn from my engineering journey.
+
+A longtime music and movie enthusiast, I borrowed the name from a classic film as a nod to the messy, honest side of building.
 
 A few links:
 
