@@ -41,7 +41,7 @@ And then came the worst part: **concert zones had horrible internet.**
 
 Requests were slow, retries were frequent, and collectively 4000+ attendees aggressively refreshing their QR screens choked the already weak bandwidth.
 
-We weren’t dealing with just *load,* we were dealing with **load + retries + terrible latency + bandwidth constraints**.
+We weren’t dealing with just the problem of *load,* we were dealing with **load + retries + terrible latency + bandwidth constraints** all at the same time.
 
 ---
 
@@ -130,16 +130,16 @@ Even if internet was slow or unavailable, the QR always appeared in time.
 
 We implemented this approach just **3 days before launch**.
 
-Had a few timestamp mismatches? Yes.
+During testing we discovered that sometimes the hashes didn't match because of timestamp issues, the solution here was simple. Just expand the verification window, from T-1 to T+1 which unsuprisingly eliminated all the hash mismatch issues.
 
-Expanded verification window to T-1 to T+1 minutes? Fixed.
-
-Launched under stress? Absolutely.
+With this fix deployed, we launched this feature under imense stress, BUT
 
 - On concert day, QR codes loaded *instantly*.
 - Entry lines moved faster than ever.
 - Nobody complained about network issues.
 - We even got live praise on our campus’ social media circles for how smooth the experience was.
+
+Which honestly made all the effort worth it.
 
 ---
 
@@ -153,6 +153,6 @@ In the end we were able to
 - Preserve security by still retaining the expiry feature.
 - Implement all of this within just 3 days of the app launch!
 - Handle ticketing worth 7.6 million INR without a hitch
-- But most importantly… won user trust ♥️
+- But most importantly, we won user trust ♥️
 
 At the end of the day, what sets great engineering apart is the ability to *build → execute → iterate* with clarity and purpose even when the clock is ticking. This is something that I was able to achieve a lot of times working for this club and is probably the reason why I fell in love with software engineering in the first place.

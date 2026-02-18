@@ -8,9 +8,18 @@ summary = "Designing a User event streaming platform with horizontal scaling for
 +++
 
 ## **Background**
-Onboarding Journeys can be long, more so if they're for credit cards. The steps can be long drawn, they can lack clarity, and its very easy for users to get confused and dropoff entirely. Of course, this problem can be fixed by improving the UX, understanding what confuses users, which users are most likely to dropoff and which steps are most likely to cause these dropoffs. Once you figure why the users are dropping off maybe the next step is to claw some of them back with customer engagement tools? What if it was possible for analytics teams to get real time dropoff rates through different steps? What if it was possible for product owners to analyze results of their A/B testing in the journey?
+Onboarding Journeys can be long, more so if they're for credit cards. The steps can be long drawn, they can lack clarity, and its very easy for users to get confused and dropoff entirely. Of course, this problem can be fixed by improving the UX but really understanding 
+1) What confuses users
+2) Which users are most likely to dropoff
+3) Which steps are most likely to cause these dropoffs
 
-These are some of the questions I asked myself while working on a funnel analysis of an onboarding journey. The answer to all of the above questions was an in-house event orchestration platform called Analytica (greek for science of analysis) that could power customer engagement tools, analytics, logging and basically anything that could require user triggered events.
+Once we've figured out the answer for these questions, the next step is to act on these insights.
+
+1) Maybe send custom reminders and nudges to users that have dropped off
+2) Allow analytics teams to visualize real-time dropoffs though the journey
+3) Enable Product owners to analyze results of their A/B testing within the journey through real-time dashboards
+
+These are some of the functionalities I wanted for my use-case while working on a funnel analysis of an onboarding journey. The answer to all of the above questions was an in-house event orchestration platform called **Analytica** (greek for science of analysis) that could power customer engagement tools, analytics, logging and basically anything that could require user triggered events.
 
 ## **Why application workflow engines just aren't enough**
 All the steps and transitions in our onboarding journey were being powered by an application workflow engine. Usually all of the application and transition data is stored on a RDBMS/NoSQL Database. However its not possible to directly use this as a source of truth for analytics. First of all, you would need to gather all of this data from different sources and dump them in a warehouse to power analytics tools which in itself is a non-trivial task.
@@ -79,4 +88,6 @@ For now I was really satisfied with what I had achieved in terms of
 - in terms of functionality (we successfuly demo'd our customer engagement tool and warehouse analytics through this tool)
 - in short timespan (2 weeks)
 
-The challenge of balancing extensibility with scalability was a really fun experience overall and I was glad that I had the opportunity to design this systen from the ground up!
+Designing and building this platform from scratch gave me a far deeper appreciation for distributed systems than any textbook ever could. Balancing extensibility with performance, schema flexibility with strict validation, and real-time guarantees with horizontal scalability forced me to think like both a product engineer and a systems engineer.
+
+More than just handling events, this project taught me how to design decoupled architectures, leverage Kafka and Redis effectively, and build systems that can evolve without constant redeployments. Most importantly, it reinforced a key engineering lesson for me: scalability is not something you “add later” — it must be a first-class design principle from day one.
